@@ -40,7 +40,7 @@
   ],
   "license": "MIT",
   "files": [
-    "/lib"
+    "/src"
   ],
   "scripts": {
     "prepare": "husky install && yarn build",
