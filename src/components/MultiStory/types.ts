@@ -6,6 +6,7 @@ import type {
   StoryContainerProps,
   StoryType,
 } from '../StoryView/types';
+import type { JSX } from 'react';
 
 export interface MultiStoryBaseProps extends Partial<FlatListProps<any>> {
   stories: StoriesType[];

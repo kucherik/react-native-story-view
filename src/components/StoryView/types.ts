@@ -1,4 +1,4 @@
-import type { RefObject } from 'react';
+import type { JSX, RefObject } from 'react';
 import type {
   ActivityIndicatorProps,
   ImageProps,
@@ -105,7 +105,7 @@ export interface StoryViewProps {
 
 export interface StoryViewProps extends CommonProps {
   progressIndex: number;
-  viewRef?: RefObject<View>;
+  viewRef?: RefObject<View | null>;
 }
 
 export interface ProgressiveImageProps {

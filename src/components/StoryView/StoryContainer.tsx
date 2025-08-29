@@ -78,7 +78,7 @@ const StoryContainer = forwardRef<StoryRef, StoryContainerProps>(
       containerStyle,
     } = useStoryContainer(props, viewedStories);
 
-    const viewRef = useRef<View>(null);
+    const viewRef = useRef<View | null>(null);
 
     useImperativeHandle(ref, () => ({
       pause: (pause: boolean) => {
@@ -116,7 +116,7 @@ const StoryContainer = forwardRef<StoryRef, StoryContainerProps>(
         : 0;
 
     const overlayViewStyles = useMemo(() => {
-      let style: StyleProp<ViewStyle> = [styles.overlayViewStyle];
+      const style: StyleProp<ViewStyle> = [styles.overlayViewStyle];
 
       if (overlayViewPostion === OverlayPositions.Middle) {
         style.push(styles.overlayMiddleViewStyle);
