@@ -4,12 +4,12 @@
   "description": "React Native component to provide status/stories feature.",
   "main": "lib/index",
   "types": "lib/index.d.ts",
-  "homepage": "https://github.com/SimformSolutionsPvtLtd/react-native-story-view#readme",
+  "homepage": "https://github.com/kucherik/react-native-story-view#readme",
   "contributors": [],
   "author": "Simform Solutions",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SimformSolutionsPvtLtd/react-native-story-view"
+    "url": "https://github.com/kucherik/react-native-story-view"
   },
   "keywords": [
     "react",
@@ -58,7 +58,6 @@
     "react-native-gesture-handler": ">=2.13.4",
     "react-native-reanimated": ">=3.5.4",
     "react-native-video": ">=5",
-    "react-native-video-cache-control": "*",
     "@shopify/flash-list": ">=1.5.0",
     "lodash": "*"
   },
