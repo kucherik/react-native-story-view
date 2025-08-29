@@ -26,9 +26,9 @@ $ yarn add react-native-story-view
 ##### 2. Install peer dependencies
 
 ```bash
-$ npm install react-native-video react-native-reanimated react-native-gesture-handler react-native-video-cache-control @shopify/flash-list lodash
+$ npm install react-native-reanimated react-native-gesture-handler @shopify/flash-list lodash
 # --- or ---
-$ yarn add react-native-video react-native-reanimated react-native-gesture-handler react-native-video-cache-control @shopify/flash-list lodash
+$ yarn add react-native-reanimated react-native-gesture-handler @shopify/flash-list lodash
 ```
 
 > Note: If you already have these libraries installed and at the latest version, you are done here!
@@ -96,7 +96,6 @@ jcenter() {
 }
 ```
 
-##### Know more about [react-native-video](https://www.npmjs.com/package/react-native-video), [react-native-reanimated](https://www.npmjs.com/package/react-native-reanimated), [react-native-gesture-handler](https://www.npmjs.com/package/react-native-gesture-handler), [react-native-video-cache-control](https://www.npmjs.com/package/react-native-video-cache-control), [@shopify/flash-list](https://www.npmjs.com/package/@shopify/flash-list) and [lodash](https://www.npmjs.com/package/lodash)
 
 ---
 
@@ -591,7 +590,6 @@ Pass any custom overlay view in the story view, which will be visible when the s
 > | headerViewProps          |    {}     | ViewProps                                                  | Header view wrapper props                                                        |
 > | footerViewProps          |    {}     | ViewProps                                                  | Footer view wrapper props                                                        |
 > | customViewProps          |    {}     | ViewProps                                                  | Custom view wrapper props                                                        |
-> | videoProps               |    {}     | VideoProperties                                            | To override video properties                                                     |
 > | ref                      |    {}     | StoryRef                                                   | To access 'pause' story method and 'viewedStories' stories object (Single Story) |
 > | customViewStyle          |    {}     | ViewStyle                                                  | Style of custom view container                                                   |
 > | headerStyle              |    {}     | ViewStyle                                                  | Style of header container                                                        |

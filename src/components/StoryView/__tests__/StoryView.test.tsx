@@ -6,7 +6,6 @@ import ProgressView from '../ProgressView';
 import { Footer } from '../../Footer';
 
 jest.useFakeTimers();
-jest.mock('react-native-video', () => 'Video');
 
 describe('StoryView component', () => {
   it('Match Snapshot', () => {

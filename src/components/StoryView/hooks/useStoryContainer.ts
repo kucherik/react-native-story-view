@@ -12,7 +12,6 @@ import {
   NativeTouchEvent,
   StyleSheet,
 } from 'react-native';
-import type { OnLoadData, OnProgressData } from 'react-native-video';
 import { useKeyboardListener } from '../../../hooks';
 import { Colors, Metrics } from '../../../theme';
 import styles from '../styles';
@@ -117,7 +116,7 @@ const useStoryContainer = (
     storyCount,
   ]);
 
-  const onVideoLoaded = (length: OnLoadData) => {
+  const onVideoLoaded = (length: any) => {
     setPause(false);
     setDuration(
       props?.stories?.[progressIndex]?.duration ??
@@ -135,7 +134,7 @@ const useStoryContainer = (
     }
   };
 
-  const onVideoProgress = (progressData?: OnProgressData) => {
+  const onVideoProgress = (progressData?: any) => {
     const videoDurations = [...videoDuration];
     videoDurations[progressIndex] = progressData?.currentTime ?? 0;
     setVideoDuration([...videoDurations]);

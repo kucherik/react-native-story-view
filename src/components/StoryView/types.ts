@@ -10,16 +10,11 @@ import type {
   ViewProps,
   ViewStyle,
 } from 'react-native';
-import type {
-  OnLoadData,
-  OnProgressData,
-  VideoProperties,
-} from 'react-native-video';
 
 export enum StroyTypes {
   Image = 'image',
-  Video = 'video',
   Text = 'text',
+  Video = 'video',
 }
 
 export enum ClickPosition {
@@ -95,15 +90,15 @@ export interface ProgressBarsProps extends ProgressBarCommonProps {
 
 export interface StoryViewProps {
   pause?: boolean;
-  onVideoLoaded?: (arg0: OnLoadData) => void;
+  onVideoLoaded?: (arg0: any) => void;
   videoDuration: number[];
-  onVideoProgress?: (progressData?: OnProgressData) => void;
+  onVideoProgress?: (progressData?: any) => void;
   onVideoEnd?: () => void;
   onImageLoaded?: () => void;
   stories: StoryType[];
   showSourceIndicator?: boolean;
   sourceIndicatorProps?: ActivityIndicatorProps;
-  videoProps?: VideoProperties;
+  videoProps?: any;
   index?: number;
   storyIndex?: number;
 }
@@ -158,7 +153,7 @@ export interface StoryContainerBaseProps extends CommonProps {
   storyContainerViewProps?: ViewProps;
   showSourceIndicator?: boolean;
   sourceIndicatorProps?: ActivityIndicatorProps;
-  videoProps?: VideoProperties;
+  videoProps?: any;
   onChangePosition?: (
     progressIndex: number,
     userStoryIndex?: number
